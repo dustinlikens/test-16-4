@@ -87,7 +87,7 @@ jobs:
     - if: matrix.build-mode == 'manual'
       shell: bash
       run: |
-        /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/xcodebuild
+        /Applications/Xcode_16.*.app/Contents/Developer/usr/bin/xcodebuild
         exit 1
 
     - name: Perform CodeQL Analysis
