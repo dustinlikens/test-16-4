@@ -84,8 +84,7 @@ jobs:
     # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
     - if: matrix.build-mode == 'manual'
       shell: bash
-      run: |
-      Applications/Xcode_16.2.app/Contents/Developer/usr/bin/xcodebuild -project test-16.xcodeproj -allowProvisioningUpdates
+      run: Applications/Xcode_16.2.app/Contents/Developer/usr/bin/xcodebuild -project test-16.xcodeproj -allowProvisioningUpdates
         echo 'If you are using a "manual" build mode for one or more of the' \
           'languages you are analyzing, replace this with the commands to build' \
           'your code, for example:'
