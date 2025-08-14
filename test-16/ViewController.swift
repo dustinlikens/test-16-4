@@ -7,11 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainScreen: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setStyle()
+    }
+    
+    func setStyle() {
+        self.view.backgroundColor = UIColor.brown
     }
 
 
