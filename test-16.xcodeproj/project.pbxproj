@@ -100,7 +100,7 @@
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					EF63EF262E4A580C008CEC93 = {
-						CreatedOnToolsVersion = 16.4;
+						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
