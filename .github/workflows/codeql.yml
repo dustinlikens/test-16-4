@@ -86,7 +86,10 @@ jobs:
     - if: matrix.build-mode == 'manual'
       shell: bash
       run: |
-        /Applications/Xcode_16.*.app/Contents/Developer/usr/bin/xcodebuild build -project test-16.xcodeproj -scheme test-16
+        /Applications/Xcode_16.*.app/Contents/Developer/usr/bin/xcodebuild -project test-16.xcodeproj \
+        -scheme test-16 \
+        -destination "platform=iOS Simulator,name=iPhone 16 Pro,OS=18.1" \
+        clean build --verbose | xcbeautify --renderer github-actions
         echo 'If you are using a "manual" build mode for one or more of the' \
           'languages you are analyzing, replace this with the commands to build' \
           'your code, for example:'
